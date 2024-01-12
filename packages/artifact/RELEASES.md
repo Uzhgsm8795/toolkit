@@ -95,13 +95,7 @@
 
 - Fixed a bug in Node16 where if an HTTP download finished too quickly (<1ms, e.g. when it's mocked) we attempt to delete a temp file that has not been created yet [#1278](https://github.com/actions/toolkit/pull/1278/commits/b9de68a590daf37c6747e38d3cb4f1dd2cfb791c)
 
-### 2.0.0
+### 1.1.2
 
-- Major release. Supports new Artifact backend for improved speed, reliability and behavior.
-- Numerous API changes, [some breaking](./README.md#breaking-changes).
-
-- Blog post with more info: TBD
-
-### 2.0.1
-
-- Patch to fix transient request timeouts https://github.com/actions/download-artifact/issues/249
+- Update 403 Forbidden error matching for GHES uploads [#1522](https://github.com/actions/toolkit/pull/1522)
+- Update vulnerable dependencies [#1480](https://github.com/actions/toolkit/pull/1480)
